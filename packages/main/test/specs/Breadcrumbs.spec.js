@@ -230,6 +230,6 @@ describe("Breadcrumbs general interaction", () => {
 		const eventResult = await browser.$("#result");
 		const url = await browser.getUrl();
 		assert.strictEqual(url, initialUrl, "url should not have changed");
-		assert.strictEqual(eventResult.innerText, link.innerText, "label for pressed link is correct");
+		assert.strictEqual(await eventResult.getText(), await link.getText(), "label for pressed link is correct");
 	});
 });
