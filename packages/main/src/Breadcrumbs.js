@@ -117,8 +117,10 @@ const metadata = {
 
 		/**
 		 * Fires when a <code>BreadcrumbsItem</code> is clicked.
+		 * <b>Note:</b> You can prevent browser location change by calling <code>event.preventDefault()</code>.
 		 *
 		 * @event sap.ui.webcomponents.main.Breadcrumbs#item-click
+		 * @allowPreventDefault
 		 * @param {HTMLElement} item The clicked item.
 		 * @public
 		 */
